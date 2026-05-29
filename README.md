@@ -145,24 +145,58 @@ monte_carlo_integral.png
 monte_carlo_convergence.png
 ```
 
-## Запуск
+## Встановлення та запуск
 
 Для першого завдання додаткові бібліотеки не потрібні.
 
-Для другого завдання потрібно встановити залежності:
+Для другого завдання потрібні зовнішні бібліотеки `matplotlib`, `numpy` та `scipy`.
+Вони вказані у файлі `requirements.txt`.
+
+Рекомендовано встановлювати залежності у віртуальне середовище.
+
+### 1. Створення віртуального середовища
 
 ```bash
-pip install -r requirements.txt
+python -m venv .venv
 ```
 
-Запуск першого завдання:
+### 2. Активація віртуального середовища
+
+Для Git Bash на Windows:
+
+```bash
+source .venv/Scripts/activate
+```
+
+Для PowerShell на Windows:
+
+```powershell
+.venv\Scripts\Activate.ps1
+```
+
+Після активації в терміналі має з'явитися позначка `(.venv)`.
+
+### 3. Встановлення залежностей
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+### 4. Запуск першого завдання
 
 ```bash
 python task_1.py
 ```
 
-Запуск другого завдання:
+### 5. Запуск другого завдання
 
 ```bash
 python task_2.py
+```
+
+Після запуску другого завдання будуть створені файли з графіками:
+
+```text
+monte_carlo_integral.png
+monte_carlo_convergence.png
 ```
