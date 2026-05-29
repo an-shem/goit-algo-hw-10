@@ -1,0 +1,17 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE/editor
+.idea/
+.vscode/
+
+# Generated images
+monte_carlo_integral.png
+monte_carlo_convergence.png
